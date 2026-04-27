@@ -96,23 +96,37 @@
 
       <h2>Security</h2>
       <p>
-        Integration tokens are encrypted with AES-256-GCM. All data is
-        stored on infrastructure controlled by Kū Dynamics. Access is
-        restricted to authorized employees and contractors.
+        Integration tokens are encrypted with AES-256-GCM. The
+        underlying database volume is encrypted at rest with BitLocker
+        (XTS-AES 256). All network traffic is encrypted in transit
+        using HTTPS (TLS 1.2+). Daily encrypted backups are retained
+        for 14 days. All data is stored on infrastructure controlled
+        by Kū Dynamics. Access is restricted to authorized employees
+        and contractors.
       </p>
 
       <h2>Data retention</h2>
       <p>
         Records are retained for the duration of the business
         relationship and for the periods required by accounting,
-        contract, and tax retention rules.
+        contract, and tax retention rules. Audit logs are retained
+        for at least one year. Backups follow a 14-day rolling
+        retention; deleted records age out of backups within that
+        window.
+      </p>
+
+      <h2>Security incidents</h2>
+      <p>
+        If we discover that data covered by this policy has been
+        improperly accessed or disclosed, we will notify Intuit and
+        affected parties within 72 hours of discovery.
       </p>
 
       <h2>Your choices</h2>
       <p>
         Customers and vendors who would like to review or correct the
         information we hold about them may contact us at
-        <a href="mailto:orders@ku-dynamics.com">orders@ku-dynamics.com</a>.
+        <a href="mailto:support@ku-dynamics.com">support@ku-dynamics.com</a>.
       </p>
 
       <h2>Changes</h2>
@@ -124,11 +138,11 @@
       <h2>Contact</h2>
       <p>
         Kū Dynamics LLC ·
-        <a href="mailto:orders@ku-dynamics.com">orders@ku-dynamics.com</a>
+        <a href="mailto:support@ku-dynamics.com">support@ku-dynamics.com</a>
       </p>
 
       <footer>
-        Last updated: 2026-04-25 ·
+        Last updated: 2026-04-27 ·
         <a href="./eula.html">End-User License Agreement</a> ·
         <a href="./index.html">Home</a>
       </footer>
